@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Martin",
+    "mail": "alice.martin@email.com",
+    "subject": "Contact Request",
+    "message": "Hi, I would like to know more about your premium features.",
+    "date": "2025-12-01",
+    "hour": "10:15"
+  },
+  {
+    "id": 2,
+    "name": "Bob Dupont",
+    "mail": "bob.dupont@email.com",
+    "subject": "Bug Report",
+    "message": "The login page shows an error when I try to sign in.",
+    "date": "2025-12-02",
+    "hour": "14:22"
+  },
+  {
+    "id": 3,
+    "name": "Chloe Bernard",
+    "mail": "chloe.bernard@email.com",
+    "subject": "Question",
+    "message": "Is there a way to hide my profile from search?",
+    "date": "2025-12-03",
+    "hour": "09:47"
+  },
+  {
+    "id": 4,
+    "name": "David Leroy",
+    "mail": "david.leroy@email.com",
+    "subject": "Contact Request",
+    "message": "I am interested in partnership opportunities.",
+    "date": "2025-12-03",
+    "hour": "16:05"
+  },
+  {
+    "id": 5,
+    "name": "Emma Petit",
+    "mail": "emma.petit@email.com",
+    "subject": "Bug Report",
+    "message": "Messages are not being sent on mobile.",
+    "date": "2025-12-04",
+    "hour": "11:30"
+  },
+  {
+    "id": 6,
+    "name": "Florian Moreau",
+    "mail": "florian.moreau@email.com",
+    "subject": "Question",
+    "message": "How can I delete my account?",
+    "date": "2025-12-04",
+    "hour": "13:12"
+  },
+  {
+    "id": 7,
+    "name": "Gabrielle Simon",
+    "mail": "gabrielle.simon@email.com",
+    "subject": "Contact Request",
+    "message": "Can I get a demo of the app?",
+    "date": "2025-12-05",
+    "hour": "08:55"
+  },
+  {
+    "id": 8,
+    "name": "Hugo Lambert",
+    "mail": "hugo.lambert@email.com",
+    "subject": "Bug Report",
+    "message": "Profile pictures are not loading.",
+    "date": "2025-12-05",
+    "hour": "15:40"
+  },
+  {
+    "id": 9,
+    "name": "Ines Rousseau",
+    "mail": "ines.rousseau@email.com",
+    "subject": "Question",
+    "message": "Is my data safe on your platform?",
+    "date": "2025-12-05",
+    "hour": "17:20"
+  },
+  {
+    "id": 10,
+    "name": "Julien Fabre",
+    "mail": "julien.fabre@email.com",
+    "subject": "Contact Request",
+    "message": "I would like to suggest a new feature for the app.",
+    "date": "2025-12-05",
+    "hour": "18:10"
+  }
+]
