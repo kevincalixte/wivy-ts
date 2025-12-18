@@ -11,8 +11,8 @@ type ReviewsProps = {
 
 export const Reviews = ({ id, name, subject, message }: ReviewsProps) => {
     return (
-        <div className='relative flex justify-center'>
-            <article id={id} className='absolute flex flex-col items-center w-[80%] gap-1 p-5 rounded-xs bg-gray-300 text-black hover:bg-white hover:cursor-pointer'>
+        <div className='flex justify-center shrink-0 w-[80%] px-2 snap-start'>
+            <article id={id} className='flex flex-col items-center gap-1 p-5 rounded-xs bg-gray-300 text-black hover:bg-white hover:cursor-pointer '>
                 <h3>{name}</h3>
                 <p className='text-xs text-black-300'>About : {subject}</p>
                 <p>{message}</p>

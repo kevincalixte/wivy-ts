@@ -1,50 +1,50 @@
 import React from 'react'
-import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
+import { FiUnlock, FiTag, FiStar, FiCheckCircle } from 'react-icons/fi';
 
 export const Pricing = () => {
     return (
-        <section className='flex flex-col space-y-10 items-center justify-center [&_article]:flex [&_article]:flex-col [&_article]:justify-center [&_article]:items-center [&_article]:px-15 [&_article]:py-10  [&_article]:border [&_article]:w-[90%] [&_article]:border-white/20 [&_li]:flex [&_li]:items-center [&_li]:space-x-2 [&_li]:leading-7 [&_h3]:mb-5 [&_h3]:text-[1.2rem] '>
-            <h2>Unlock More Features</h2>
+        <section className='flex flex-col min-h-screen mt-5 items-center gap-5  [&_article]:flex [&_article]:flex-col [&_article]:justify-center [&_article]:items-center [&_article]:py-10  [&_article]:border [&_article]:w-[90%]  [&_article]:bg-white/1 [&_article]:border-white/5 [&_h3]:flex [&_h3]:items-center [&_h3]:gap-2 [&_span]:text-[1.1rem] [&_li]:flex [&_li]:items-center [&_li]:space-x-2 [&_li]:leading-7 [&_h3]:mb-5 [&_h3]:text-[1.3rem] '>
+            <h2 className='m-5 flex items-center gap-2'><FiUnlock /> Unlock More Features</h2>
             <article>
-                <h3 >Free</h3>
+                <h3><FiTag />Free</h3>
                 <ul>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-green-500" />
+                        <FiCheckCircle className="text-green-500" />
                         <span>Unlimited chat</span>
                     </li>
 
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-green-500" />
+                        <FiCheckCircle className="text-gray-400" />
                         <span>See who visited you</span>
                     </li>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-gray-400" />
+                        <FiCheckCircle className="text-gray-400" />
                         <span>See who liked you</span>
                     </li>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-gray-400" />
+                        <FiCheckCircle className="text-gray-400" />
                         <span>Ad-free experience</span>
                     </li>
                 </ul>
             </article>
 
             <article>
-                <h3 >Premium</h3>
+                <h3><FiStar />Premium</h3>
                 <ul>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-green-500" />
+                        <FiCheckCircle className="text-green-500" />
                         <span>Unlimited chat</span>
                     </li>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-green-500" />
+                        <FiCheckCircle className="text-green-500" />
                         <span>See who visited you</span>
                     </li>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-green-500" />
+                        <FiCheckCircle className="text-green-500" />
                         <span>See who liked you</span>
                     </li>
                     <li>
-                        <IoMdCheckmarkCircleOutline className="text-green-500" />
+                        <FiCheckCircle className="text-green-500" />
                         <span>Ad-free experience</span>
                     </li>
                 </ul>
