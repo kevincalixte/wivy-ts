@@ -1,4 +1,4 @@
-import Button from '../Hero/Button/Button';
+import Button from '../Button/Button';
 import { FiMail } from 'react-icons/fi';
 
 export const Contact = () => {

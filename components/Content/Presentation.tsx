@@ -1,24 +1,32 @@
 'use client'
-import React from 'react'
 import { motion } from 'framer-motion';
-import {FiHelpCircle, FiInfo} from 'react-icons/fi';
+import { FiZap, FiSearch, FiHeart, FiUsers } from "react-icons/fi";
 
-type PresentationProps = {
-    text: string;
-}
-export const Presentation = ({ text }: PresentationProps) => {
+export const Presentation = () => {
     return (
-        <motion.div className='flex flex-col items-center space-y-5'>
-        <h2 className='flex items-center gap-2'><FiInfo/>About Us</h2>
-            <motion.p
-                className='p-5 text-center leading-7'
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
-                >
-               {text}
-            </motion.p> 
-         </motion.div>
+        <>
+            <h2 className='py-10 flex justify-center items-center gap-2'><FiZap /> What Makes Us Different ?</h2>
+            <section className='flex flex-col space-y-10 [&_div]:flex [&_div]:flex-col [&_div]:gap-3 [&_div]:items-center [&_div]:text-center [&_h3]:font-semibold [&_h3]:text-lg [&_p]:text-sm [&_p]:text-gray-300'>
+
+                <div>
+                    <FiSearch className='text-4xl text-white' />
+                    <h3>Search</h3>
+                    <p className='text-sm text-gray-300'>Find people who match your vibe with personalized tags</p>
+                </div>
+
+                <div>
+                    <FiHeart className='text-4xl text-fuchsia-500' />
+                    <h3>Connect</h3>
+                    <p>Ready for romance? We've got your back with match suggestions and activity alerts</p>
+                </div>
+
+                <div>
+                    <FiUsers className='text-4xl text-blue-500' />
+                    <h3>Friends</h3>
+                    <p>Build genuine friendships where kindness comes first</p>
+
+                </div>
+            </section>
+        </>
     )
 }

@@ -1,6 +1,5 @@
-import React from 'react'
 import { IoIosArrowDown } from "react-icons/io";// import { Button } from '../Button/Button';
-import Button from './Button/Button';
+import Button from '../Button/Button';
 
 type HeroProps = {
     title: string;
