@@ -25,7 +25,7 @@ export const Reviews = () => {
 
 
     return (
-        <>
+        <div className="px-5">
             <h2 className='mb-10 flex justify-center items-center gap-2'><FiHelpCircle />{title}</h2>
             <section className='flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide'>
                 {
@@ -43,7 +43,7 @@ export const Reviews = () => {
                     ))
                 }
             </section>
-        </>
+        </div>
 
     )
 }

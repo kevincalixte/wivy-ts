@@ -1,12 +1,11 @@
 'use client'
-import { motion } from 'framer-motion';
 import { FiZap, FiSearch, FiHeart, FiUsers } from "react-icons/fi";
 
 export const Presentation = () => {
     return (
-        <>
+        <div className='px-5'>
             <h2 className='py-10 flex justify-center items-center gap-2'><FiZap /> What Makes Us Different ?</h2>
-            <section className='flex flex-col space-y-10 [&_div]:flex [&_div]:flex-col [&_div]:gap-3 [&_div]:items-center [&_div]:text-center [&_h3]:font-semibold [&_h3]:text-lg [&_p]:text-sm [&_p]:text-gray-300'>
+            <section className='flex flex-col space-y-10 px-10 [&_div]:flex [&_div]:flex-col [&_div]:gap-3 [&_div]:items-center [&_div]:text-center [&_h3]:font-semibold [&_h3]:text-lg [&_p]:text-sm [&_p]:text-gray-300'>
 
                 <div>
                     <FiSearch className='text-4xl text-white' />
@@ -27,6 +26,6 @@ export const Presentation = () => {
 
                 </div>
             </section>
-        </>
+        </div>
     )
 }

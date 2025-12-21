@@ -1,11 +1,13 @@
 type TopProps = {
-  logo : string;
+  logo: string;
 }
-export const Top = ({logo}: TopProps) => {
+export const Top = ({ logo }: TopProps) => {
   return (
     <>
       {/* Page Principale */}
-      <img className='absolute w-10 m-3' src={logo} alt="" />
+      <div className='absolute w-full h-10 bg-linear-to-b from-black/80'>
+        <img className=' w-10 m-3' src={logo} alt="" />
+      </div> 
     </>
   )
 }
