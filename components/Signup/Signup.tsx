@@ -10,7 +10,7 @@ type SignupProps = {
 export const Signup = ({ onClose }: SignupProps) => {
     return (
         <>
-            <div className='flex flex-col items-center justify-center w-full h-full bg-black/60 backdrop-blur-xl fixed overflow-hidden'>
+            <div className='flex flex-col items-center justify-center w-screen h-screen bg-black/60 backdrop-blur-xl fixed'>
                 <div>
                     <Link href={''}> <AiOutlineClose className="absolute top-0 right-0 m-3 text-2xl" /></Link>
                     <h2 className="text-2xl mb-5">Sign Up</h2>
