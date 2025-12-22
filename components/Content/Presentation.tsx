@@ -12,18 +12,16 @@ export const Presentation = () => {
                     <h3>Search</h3>
                     <p className='text-sm text-gray-300'>Find people who match your vibe with personalized tags</p>
                 </div>
-
-                <div>
-                    <FiHeart className='text-4xl text-fuchsia-500' />
-                    <h3>Connect</h3>
-                    <p>Ready for romance? We've got your back with match suggestions and activity alerts</p>
-                </div>
-
                 <div>
                     <FiUsers className='text-4xl text-blue-500' />
                     <h3>Friends</h3>
                     <p>Build genuine friendships where kindness comes first</p>
 
+                </div>
+                <div>
+                    <FiHeart className='text-4xl text-fuchsia-500' />
+                    <h3>Connect</h3>
+                    <p>Ready for romance? We've got your back with match suggestions and activity alerts</p>
                 </div>
             </section>
         </div>

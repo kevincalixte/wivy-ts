@@ -3,7 +3,7 @@ import { FiMail } from 'react-icons/fi';
 
 export const Contact = () => {
     return (
-        <section className='mx-10'>
+        <section className='mx-5'>
             <h2 className='mb-10 justify-center flex items-center gap-2'><FiMail />Contact Us</h2>
             <form method='POST' className='rounded-xs space-y-5'>
                 <div className='space-y-2 [&_input]:w-full [&_input]:px-3 [&_input]:py-2 [&_input]:rounded-xs [&_input]:border-b-2 [&_input]:border-b-gray-400 [&_input]:focus:outline-0'>
@@ -19,7 +19,7 @@ export const Contact = () => {
                     <textarea name="text" id="text" maxLength={200} className='w-full h-36 bg-white/8 rounded-xs resize-none overflow-hidden p-3' placeholder='Your message'></textarea>
                 </div>
                 <div>
-                    <Button className='w-full rounded-xs'>Submit</Button>
+                    <Button className='w-full bg-white/90'>Submit</Button>
                 </div>
             </form>
         </section>

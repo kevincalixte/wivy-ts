@@ -17,7 +17,7 @@ export const Content = () => {
             <Reviews />
             <Border />
             <Contact />
-
+        
         </div>
 
     )
