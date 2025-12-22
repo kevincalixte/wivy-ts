@@ -1,8 +1,10 @@
+// 'use client';
 import { useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from "../Button/Button"
 import { Border } from "../Content/Border";
 import { useState } from "react";
+import Link from "next/link";
 
 type SignupProps = {
     onClose: () => void;
@@ -18,7 +20,7 @@ export const Signup = ({ onClose }: SignupProps) => {
     }, []);
 
     const [isSignin, setIsSignin] = useState(false);
-
+    // Voir autocomplete input
     return (
         <>
             <div className='flex flex-col items-center justify-center w-screen h-screen bg-black/60 backdrop-blur-xl fixed'>
@@ -32,7 +34,7 @@ export const Signup = ({ onClose }: SignupProps) => {
                         {isSignin ? <>
                             <input type='password' name='password' placeholder='Your Password' />
                         </> : ''}
-                        <Button className='px-5 mt-3 rounded-xs text-gray-300 block mx-auto border'>Validate</Button>
+                      <Link href={'/welcome'}> <Button className='px-5 mt-3 rounded-xs text-gray-300 block mx-auto border'>Validate</Button></Link> 
                     </form>
                 </div>
 

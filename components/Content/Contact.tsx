@@ -11,12 +11,12 @@ export const Contact = () => {
                     <input type='email' name='email' placeholder='Your Email Address' />
                 </div>
                 <div>
-                    <select name="subject" id="subject" className='w-full bg-white/8 rounded-xs px-3 py-2.5 '>
+                    <select name="subject" id="subject" className='w-full bg-white/8 rounded-xs px-3 py-2.5 focus:outline-0'>
                         <option value="">Choose a subject</option>
                     </select>
                 </div>
                 <div>
-                    <textarea name="text" id="text" maxLength={200} className='w-full h-36 bg-white/8 rounded-xs resize-none overflow-hidden p-3' placeholder='Your message'></textarea>
+                    <textarea name="text" id="text" maxLength={200} className='w-full h-36 bg-white/8 rounded-xs resize-none overflow-hidden p-3 focus:outline-0' placeholder='Your message'></textarea>
                 </div>
                 <div>
                     <Button className='w-full bg-white/90'>Submit</Button>
