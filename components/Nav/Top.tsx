@@ -17,8 +17,7 @@ export const Top = ({ logo }: TopProps) => {
 
       <nav className={`
          ${isHome ? 'absolute w-full h-15 bg-linear-to-b from-black/85' : ''}
-         ${!isHome ? 'mt-5' : ''}
-         ${isWelcome ? 'py-3 fixed flex pl-5 items-center w-[90%] h-12 rounded-full backdrop-blur bg-white/20 text-white' : ''}
+         ${isWelcome ? 'mt-5 py-3 fixed flex pl-5 items-center w-[90%] h-12 rounded-full backdrop-blur bg-white/20 text-white' : ''}
          ${isMessage ? '' : ''}
          
         `}>
@@ -32,12 +31,11 @@ export const Top = ({ logo }: TopProps) => {
 
         {/* Page Welcome */}
         {isWelcome && (
-          <Link href={'/'} className=''>
-            <span className='flex items-center gap-2'>
-              <FiSearch />
-              <p className='text-md opacity-50'>What are you looking for today ?</p>
-            </span>
-          </Link>
+          <span className='flex items-center gap-2'>
+            <FiSearch />
+            <input className="focus:outline-0 w-[70vw] h-10" type="text" placeholder="What are you looking for today ?" />
+          </span>
+
         )}
 
 

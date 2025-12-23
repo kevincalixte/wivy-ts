@@ -1,6 +1,6 @@
 # WIVY
 - En cours de développement
-- Mobile First Iphone SE
+- Mobile First Iphone 12 Pro
 ## Technologies utilisées
 - Next.js
 - TypeScript
