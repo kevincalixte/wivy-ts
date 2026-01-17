@@ -10,6 +10,8 @@ export const Top = ({ logo }: TopProps) => {
   const pathname = usePathname();
   const isHome = pathname === '/';
   const isWelcome = pathname === '/welcome';
+  const isFavorite = pathname === '/favorite';
+  const isLike = pathname === '/like';
   const isMessage = pathname === '/message';
 
   return (
