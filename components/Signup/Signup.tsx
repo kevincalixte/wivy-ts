@@ -34,7 +34,7 @@ export const Signup = ({ onClose }: SignupProps) => {
                         {isSignin ? <>
                             <input type='password' name='password' placeholder='Your Password' />
                         </> : ''}
-                      <Link href={'/welcome'}> <Button className='px-5 mt-3 rounded-xs text-gray-300 block mx-auto border'>{isSignin ? 'Enter' : 'Create'}</Button></Link> 
+                      <Link href={'/welcome'}> <Button className='px-5 mt-3 text-gray-300 block mx-auto border'>{isSignin ? 'Enter' : 'Create'}</Button></Link> 
                     </form>
                 </div>
 
@@ -42,7 +42,7 @@ export const Signup = ({ onClose }: SignupProps) => {
 
                 <div>
                     <h2 className="text-xl mb-5 -mt-5">Or</h2>
-                    <Button onClick={() => setIsSignin(!isSignin)} className="px-5 rounded-xs text-gray-300 bg-white/20 border">{isSignin ? 'Sign Up' : 'Sign In'}</Button>
+                    <Button onClick={() => setIsSignin(!isSignin)} className="px-5  text-gray-300 bg-white/10 border">{isSignin ? 'Sign Up' : 'Sign In'}</Button>
                 </div>
 
             </div>

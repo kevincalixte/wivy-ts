@@ -6,7 +6,7 @@ type TagProps = {
 
 const Tag = ({ text }: TagProps) => {
     return (
-        <div className='border border-white/5 shadow-2xl rounded-2xl w-12 h-6 text-xs bg-black/20 text-center'>{text}</div>
+        <div className='border mb-1 border-white/5 shadow-2xl rounded-2xl w-[24%] px-3  h-5 text-xs flex justify-center bg-black/20'>{text}</div>
     )
 }
 
