@@ -3,3 +3,4 @@ export const Border = () => {
         <div className='border border-white/30 w-[40%] mx-auto my-10'></div>
     )
 }
+ 
