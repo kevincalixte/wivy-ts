@@ -1,38 +1,45 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import { GiTaurus } from 'react-icons/gi'
 import Tag from './Tag'
+import { MdVerified } from 'react-icons/md';
+import { RiRadioButtonFill } from 'react-icons/ri';
 
 type CardProps = {
     name: string;
     age: number;
-    sign: any; // A changer
+    sign: React.ReactElement;
     description: string;
-    badges: React.ReactElement[]; // A changer
     img: string;
     tags: string[];
-    state?: string;
-    verified?: string;
+    status: string;
+    verified: boolean;
+    onclick: MouseEventHandler;
 }
 
-export const Card = ({ name, age, sign, img, tags, description, badges, state, verified }: CardProps) => {
+export const Card = ({ name, age, sign, img, tags, description, status, verified, onclick }: CardProps) => {
 
     return (
 
-        <article className='flex h-30 mb-5 bg-white/5 rounded-xl'>
+        <article className='flex h-38 mb-5 bg-white/5 rounded-xl' onClick={onclick}>
             <img className='w-1/3 rounded-xl object-cover' src={img} alt="" />
-            <div className='py-1 px-2'>
-                <div className='h-1/5 flex text-sm items-center gap-2'>{name}{age}{sign} <span className='flex justify-end space-x-1.5 '>{badges.map((badge, id) => React.cloneElement(badge, { key: id }))}</span></div>
-                <div className='h-16 overflow-hidden text-ellipsis text-xs pt-3'>
-                    {description.length > 130 ? description.slice(0, 130) + "..." : description}
+            <div className='py-1 px-2 flex flex-col justify-between'>
+                <div className='h-1/5 flex items-center gap-2'>{name}{age}{sign} <span className='flex justify-end space-x-1.5 '>
+                    {status === 'connected' && <RiRadioButtonFill className='text-green-600' />}
+                    {status === 'disconnected' && <RiRadioButtonFill className='text-gray-400' />}
+                    {status === 'recent' && <RiRadioButtonFill className='text-orange-400' />}
+                    {verified && <MdVerified className='text-blue-400' />}
+                </span></div>
+                <div className=' overflow-hidden text-ellipsis text-sm'>
+                    {description.length > 60 ? description.slice(0, 60) + "..." : description}
                 </div>
-                <div className='flex flex-wrap mt-1.5'>
+                <div className='flex flex-wrap space-x-0.5 pb-2'>
                     {tags.slice(0, 4).map((text, id) => (
                         <Tag key={id} text={text} />
                     ))}
                 </div>
             </div>
         </article>
-  
+
         //Welcome
         //Favorite
         //Like
