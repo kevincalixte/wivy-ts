@@ -1,5 +1,5 @@
-import React, { MouseEventHandler } from 'react'
-import { GiTaurus } from 'react-icons/gi'
+"use client"
+import React from 'react'
 import Tag from './Tag'
 import { MdVerified } from 'react-icons/md';
 import { RiRadioButtonFill } from 'react-icons/ri';
@@ -13,15 +13,15 @@ type CardProps = {
     tags: string[];
     status: string;
     verified: boolean;
-    onclick: MouseEventHandler;
+    onclick: React.MouseEventHandler;
 }
 
 export const Card = ({ name, age, sign, img, tags, description, status, verified, onclick }: CardProps) => {
 
     return (
 
-        <article className='flex h-38 mb-5 bg-white/5 rounded-xl' onClick={onclick}>
-            <img className='w-1/3 rounded-xl object-cover' src={img} alt="" />
+        <article className='flex h-36 mb-5 bg-white/5 rounded-xl' onClick={onclick} >
+            <img className='w-1/3 rounded-l-xl object-cover' src={img} alt="" />
             <div className='py-1 px-2 flex flex-col justify-between'>
                 <div className='h-1/5 flex items-center gap-2'>{name}{age}{sign} <span className='flex justify-end space-x-1.5 '>
                     {status === 'connected' && <RiRadioButtonFill className='text-green-600' />}
