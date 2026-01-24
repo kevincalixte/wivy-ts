@@ -13,11 +13,11 @@ export const Top = ({ logo }: TopProps) => {
   const isWelcome = pathname === '/welcome';
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center lg:relative">
 
       <nav className={`
         ${isHome ? 'absolute w-full h-15 bg-linear-to-b from-black/85' : ''}
-        ${isWelcome ? 'mt-5 py-3 fixed flex pl-5 items-center w-[90%] h-12 rounded-full backdrop-blur bg-white/20 text-white' : ''}
+        ${isWelcome ? 'mt-5 z-10 py-3 fixed flex pl-5 items-center w-[90%] h-12 rounded-full backdrop-blur bg-white/20 text-white lg:w-1/4' : ''}
       `}>
 
         {/* Home */}

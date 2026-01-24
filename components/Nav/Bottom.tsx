@@ -11,7 +11,7 @@ function Bottom({ isProfile }: BottomProps) {
 
     <div className='flex justify-center'>
       {isProfile ?
-        <nav className='fixed bottom-0 mb-5 flex items-center w-[50%] h-15 p-5 rounded-4xl backdrop-blur bg-white/10 text-white'>
+        <nav className='z-20 fixed bottom-0 mb-5 flex items-center w-[50%] h-15 p-5 rounded-4xl backdrop-blur bg-white/10 text-white lg:top-100'>
           <ul className='flex items-center justify-around w-full text-2xl'>
             <li><button><FiInfo /></button></li>
             <li><button><FiStar /></button></li>
@@ -20,7 +20,7 @@ function Bottom({ isProfile }: BottomProps) {
           </ul>
         </nav>
         :
-        <nav className='fixed bottom-0 mb-5 flex items-center w-[90%] h-15 p-3 rounded-4xl backdrop-blur bg-white/10 text-white'>
+        <nav className='fixed bottom-0 mb-5 flex items-center w-[90%] h-15 p-3 rounded-4xl backdrop-blur bg-white/10 text-white lg:w-1/4'>
           <ul className='flex w-full gap-3 justify-evenly text-2xl'>
             <li><Link href={"/welcome"} className="flex items-center gap-1"><FiHome /></Link></li>
             <li><Link href={"/favorites"} className="flex items-center gap-1"><FiStar /></Link></li>

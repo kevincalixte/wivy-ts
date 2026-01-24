@@ -3,9 +3,9 @@ import { FiMail } from 'react-icons/fi';
 
 export const Contact = () => {
     return (
-        <section className='mx-5'>
+        <section className='mx-5 lg:mt-20 lg:flex lg:flex-col lg:items-center'>
             <h2 className='mb-10 justify-center flex items-center gap-2'><FiMail />Contact Us</h2>
-            <form method='POST' className='rounded-xs space-y-5'>
+            <form method='POST' className='rounded-xs space-y-5 lg:w-1/3 '>
                 <div className='space-y-2 [&_input]:w-full [&_input]:px-3 [&_input]:py-2 [&_input]:rounded-xs [&_input]:border-b-2 [&_input]:border-b-gray-400 [&_input]:focus:outline-0'>
                     <input type='text' name='name' placeholder='Your name' />
                     <input type='email' name='email' placeholder='Your Email Address' />

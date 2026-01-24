@@ -20,7 +20,7 @@ export const Card = ({ name, age, sign, img, tags, description, status, verified
 
     return (
 
-        <article className='flex h-36 mb-5 bg-white/5 rounded-xl' onClick={onclick} >
+        <article className='flex h-36 mb-5 bg-white/5 rounded-xl lg:w-[25%] hover:cursor-pointer hover:bg-white/10 hover:scale-105 transform-gpu transition-transform duration-300' onClick={onclick} >
             <img className='w-1/3 rounded-l-xl object-cover' src={img} alt="" />
             <div className='py-1 px-2 flex flex-col justify-between'>
                 <div className='h-1/5 flex items-center gap-2'>{name}{age}{sign} <span className='flex justify-end space-x-1.5 '>

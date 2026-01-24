@@ -19,8 +19,8 @@ export const Hero = ({ title, image }: HeroProps) => {
                     <Signup onClose={() => setShowSignup(false)} />
                 ) : (
                     <>
-                        <h1 className='text-2xl'>{title}</h1>
-                        <Button onClick={() => { setShowSignup(true); window.scrollTo(0, 0); }} className='px-8 bg-white/90'>Sign Up</Button>
+                        <h1 className='text-2xl lg:text-4xl'>{title}</h1>
+                        <Button onClick={() => { setShowSignup(true); window.scrollTo(0, 0); }} className='px-8 bg-white/90 lg:px-14 lg:text-xl'>Sign Up</Button>
                         <IoIosArrowDown className="mt-3 text-3xl animate-bounce" />
                     </>
                 )

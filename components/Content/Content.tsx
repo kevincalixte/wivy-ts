@@ -8,16 +8,18 @@ import { Border } from './Border';
 export const Content = () => {
 
     return (
-        <div className='[&_h2]:text-[1.5rem] '>
+        <div className='[&_h2]:text-[1.5rem] lg:[&_h2]:text-3xl '>
 
-            <Presentation />
-            <Border />
-            <Pricing />
+            <div className='lg:flex lg:p-20 lg:min-h-screen lg:items-center'>
+                <Presentation />
+                <Border />
+                <Pricing />
+            </div>
             <Border />
             <Reviews />
             <Border />
             <Contact />
-        
+
         </div>
 
     )

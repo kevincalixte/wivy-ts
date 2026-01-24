@@ -9,7 +9,7 @@ export const Footer = ({ visible }: FooterProps) => {
     return (
         <>
             {visible ?
-                <div className='flex flex-col items-center space-y-3 my-10'>
+                <div className='flex flex-col items-center space-y-3 my-10 lg:my-0 lg:pt-20 lg:pb-5'>
                     <span className="flex space-x-2 text-2xl">
                         <p className="text-[1.2rem]">Socials :</p>
                         <Link href={''}><FiFacebook className="hover:text-blue-600" /></Link>
